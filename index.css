@@ -1,0 +1,75 @@
+body{
+    background: url(/images/bg-welcome.png) no-repeat center center fixed;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    margin-top: 25px;
+}
+h1{
+    font-family: fontcofee;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: px;
+}
+p{
+    font-family: josefine_regular;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#btnwelcome {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+button{
+    width: 170px;
+    height: 45px;
+    margin: 10px;
+    font-family: josefine_medium;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+
+@font-face {
+    font-family: fontcofee;
+    src: url(/fonts/Gluten-Medium.ttf);
+}
+@font-face {
+    font-family: fontgluten_medium;
+    src: url(/fonts/Gluten-Medium.ttf);
+}
+@font-face {
+    font-family: fontgluten_regular;
+    src: url(/fonts/Gluten-Regular.ttf);
+}
+@font-face {
+    font-family: josefine_medium;
+    src: url(/fonts/JosefinSans-Medium.ttf);
+}
+    @font-face {
+        font-family: josefine_regular;
+        src: url(/fonts/JosefinSans-Regular.ttf);
+    }
