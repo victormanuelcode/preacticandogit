@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🎮 PIXEL BIRD HUNTER</title>
+    <link rel="stylesheet" href="pajaros.css">
+</head>
+
+<body>
+    <h1>🎮 PIXEL BIRD HUNTER 🎮</h1>
+
+    <div id="score">Score: 0</div>
+    <div id="timer">Time: 60</div>
+
+    <!-- FORM -->
+    <section id="formSection">
+        <form id="formPlayer">
+            <label>🎮 PLAYER NAME:</label>
+            <input type="text" id="playerName" required placeholder="Enter your name...">
+
+            <label>🎓 EDUCATION:</label>
+            <input type="text" id="playerFormation" required placeholder="E.g.: Systems Technology...">
+
+            <button type="submit" class="pixel-button">💾 SAVE & PLAY 💾</button>
+        </form>
+    </section>
+
+    <!-- GAME -->
+    <section id="gameSection" style="display:none;">
+        <div id="gameStats">
+            <div class="stat-box">
+                <div>SCORE</div>
+                <div id="scoreGame">0</div>
+            </div>
+            <div class="stat-box">
+                <div>TIME</div>
+                <div id="timerGame">60</div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <button class="pixel-button" id="btnStart" onclick="startGame()">🎯 START HUNT 🎯</button>
+        </div>
+
+        <div id="gameArea"></div>
+        <div id="gameOver">⛔ Game Over - Your score: <span id="finalScore"></span></div>
+    </section>
+
+    <!-- RANKING -->
+    <section id="rankingSection" style="display:none;">
+        <div id="ranking">
+            <h2>🏆 TOP 10 HUNTERS 🏆</h2>
+            <ol id="rankingList"></ol>
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="pixel-button" onclick="location.reload()">🔄 PLAY AGAIN 🔄</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="pajaros.js"></script>
+</body>
+
+</html>
